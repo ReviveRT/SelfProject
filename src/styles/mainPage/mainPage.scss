@@ -1,0 +1,288 @@
+$back-color: rgb(10, 10, 10);
+
+.land-container{
+  /*  border: 1px solid red; */
+   width: 85%;
+   height: 90%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   display: flex;
+   @media all and (max-width: 961px) {
+       width: 100%;
+       height: 100%;
+       display: block;
+   }
+
+        .land-logo{
+            width: 130px;
+            height: 80px;
+            /* border: 1px solid green; */
+            align-items: center;
+            justify-content: center;
+            display: inherit;
+            border-left: 2px solid #eee;
+            border-right: 2px solid #eee;
+            cursor: pointer;
+            transition: .3s;
+            position: absolute;
+            animation: logoFadeIn ease 3s;
+            &:hover{
+                background-color: #eee;
+                transition: .3s;
+                box-shadow: inset 0px 0px 10px black;
+            }
+
+            @keyframes logoFadeIn {
+                0%{
+                    opacity: 0;
+                }50%{
+                    opacity: 0;
+                }100%{
+                    opacity: 1;
+                }
+            }
+
+            @media all and (max-width: 1388px) {
+                width: 100px;
+                height: 70px;
+            }
+            @media all and (max-width: 1099px){
+                width: 90px;
+                height: 60px;
+            }
+            @media all and (max-width: 961px){
+                width: 100%;
+                height: 100px;
+                text-align: center;
+                border-bottom: 2px solid #eee;
+                border-left: none;
+                border-right: none;
+                position: relative;
+                display: block;
+                
+            }
+
+            .logo-tit{
+                text-shadow: 0px 0px 10px #eee;
+                font-size: 35px;
+                font-family: 'Oswald',cursive;
+                letter-spacing: 1.5px;
+                @media all and (max-width: 1388px) {
+                    font-size: 30px;
+                }
+                @media all and (max-width: 1099px){
+                   font-size: 25px;
+                }
+                @media all and (max-width: 961px){
+                    position: relative;
+                    top: 30px;
+                    
+                }   
+            }
+            
+        }
+
+        .land-title{
+            width: 40%;
+            height: 100%;
+            margin-left: 20%;
+            color: #eee;
+
+            text-align: center;
+            @media all and (max-width: 961px){
+                display: inline-block;
+                position: relative;
+                text-align: center;
+                width: 100%;
+                height: 400px;
+                margin-left: 0;
+            }  
+            
+                .up-tit{
+                    width: 100%;
+                    height: 150px;
+                    position: relative;
+                    top: 20%;
+                    background-image: url(../../assets/ezgif.com-gif-maker.gif);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    pointer-events: none;
+                    z-index: 1000;
+                    border-radius: 10%;
+                    box-shadow: 0 0 10px 10px black;
+                    transform: scale(1.2);
+                    
+                    @media all and (max-width: 1388px) {
+                        height: 130px;
+                        top: 23%;
+                        box-shadow: 0 0 8px 8px black;
+                    }
+                    @media all and (max-width: 1099px){
+                        height: 150px;
+                        font-size: 100px;
+                        top: 22%;
+                    }
+                    @media all and (max-width: 961px){
+                        position: relative;
+                        top: 10%;
+                        left: 0;
+                        transform: none;
+                    }  
+                }
+
+                .down-tit{
+                    font-size: 35px;
+                    width: 100%;
+                    position: relative;
+                    top: 24%;
+                    font-family: 'Oswald',cursive;
+                    pointer-events: none;
+                    animation: downTitFadeIn ease 3s;
+                    transition: .3s;
+                    @keyframes downTitFadeIn {
+                        0%{
+                            opacity: 0;
+                        }50%{
+                            opacity: 0;
+                        }100%{
+                            opacity: 1;
+                        }
+                    }
+
+
+                    @media all and (max-width: 1388px) {
+                        font-size: 30px;
+                        top: 25%;
+                    }
+                    @media all and (max-width: 1099px){
+                        font-size: 27px;
+                        top: 25%;
+                    }
+                    @media all and (max-width: 961px){
+                        position: relative;
+                        top: 12%;
+                        left: 0;
+                    }  
+                }
+
+                .resume-btn{
+                    padding: 25px 60px;
+                    font-size: 17px;
+                    background-color: $back-color;
+                    border: 1px solid #eee;
+                    color: #eee;
+                    box-shadow: 0px 0px 10px #eee;
+                    transition: .3s;
+                    cursor: pointer;
+                    margin: 0 auto;
+                    position: relative;
+                    top: 36%; 
+                    font-family: 'Oswald',cursive;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                    animation: btnFadeIn ease 3s;
+                    &:hover{
+                        color: $back-color;
+                        background-color: #eee;
+                        box-shadow: inset 0px 0px 10px $back-color;
+                        transition: .3s;
+                    }
+
+                    @keyframes btnFadeIn {
+                        0%{
+                            opacity: 0;
+                        }50%{
+                            opacity: 0;
+                        }100%{
+                            opacity: 1;
+                        }
+                    }
+
+                    @media all and (max-width: 1388px) {
+                        font-size: 14px;
+                        padding: 20px 50px;
+                        margin-top: 50px;
+                        top: 33%;
+                    }
+                    @media all and (max-width: 1099px){
+                        font-size: 13px;
+                        padding: 20px 45px;
+                        margin-top: 50px;
+                        top: 35%;
+                    }
+                    @media all and (max-width: 961px){
+                        font-size: 13px;
+                        padding: 20px 45px;
+                        margin-top: 0px;
+                        top: 33%;
+                        left: 0;
+                        box-shadow: inset 0px 0px 7px #eee;
+                    }
+
+
+                }
+        }    
+
+        .land-img{
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid rgb(19, 61, 139); */
+            background-image: url('../../assets/backgound-me.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            animation: imgFadeIn ease 3s;
+
+            @keyframes imgFadeIn {
+                0%{
+                    opacity: 0;
+                }50%{
+                    opacity: 0;
+                }100%{
+                    opacity: 1;
+                }
+            }
+
+            @media all and (max-width: 961px){
+                width: 100%;
+                min-height: 300px;
+                max-height: 550px;
+                background-image: url('../../assets/IMG_0049B.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                box-shadow: inset 0 0 10px 10px black;
+               
+            }
+            
+        }
+    
+        .footer{
+            display: none;
+                @media all and (max-width: 961px){
+                    width: 100%;
+                    height: 70px;
+                    display: flex;
+                    background-color: $back-color;
+                    align-items: center;
+                    justify-content: space-around;
+                      
+                        a{
+                            color: #eee;
+                            font-size: 25px;
+                            &:hover{
+                                color: rgb(170, 170, 170);
+                            }
+                        }
+                    }
+                }
+            }
+            
+  
+    
+    
+
+
